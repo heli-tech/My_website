@@ -472,7 +472,7 @@ img {max-width: 100%;}
 .contact-us .element-3{position: absolute;content: "";right: -145px;top: -9px;}
 .contact-us .element-6{position: absolute;content: "";right:0;bottom:0;}
 .review-section .inner-box:after{position: absolute;content: "\f10d";height: 30px;width: 30px;font-size: 50px;font-family: 'FontAwesome';color: #0000000d;top: 7px;left: 27px;}
-.review-section .info-box .name{margin-bottom:0;font-size:22px;}
+.review-section .info-box .name{margin-bottom:0;font-size:17px;}
 /************************************************************************************/
 @keyframes ani-panel {
   0% {color: #7390bf;opacity: 0;}
