@@ -108,86 +108,8 @@ AOS.init({
 	  }
 
 
-    /*--------------------
-    * OwlSlider
-    ----------------------*/
-    NAY.Owl = function () {
-      var owlslider = jQuery("div.owl-carousel");
-      if(owlslider.length > 0) {  
-         loadScript(plugin_track + 'owl-carousel/js/owl.carousel.min.js', function() {
-           owlslider.each(function () {
-            var $this = $(this),
-                $items = ($this.data('items')) ? $this.data('items') : 1,
-                $loop = ($this.attr('data-loop')) ? $this.data('loop') : true,
-                $navdots = ($this.data('nav-dots')) ? $this.data('nav-dots') : false,
-                $navarrow = ($this.data('nav-arrow')) ? $this.data('nav-arrow') : false,
-                $autoplay = ($this.attr('data-autoplay')) ? $this.data('autoplay') : true,
-                $autospeed = ($this.attr('data-autospeed')) ? $this.data('autospeed') : 5000,
-                $smartspeed = ($this.attr('data-smartspeed')) ? $this.data('smartspeed') : 1000,
-                $autohgt = ($this.data('autoheight')) ? $this.data('autoheight') : false,
-                $CenterSlider = ($this.data('center')) ? $this.data('center') : false,
-                $space = ($this.attr('data-space')) ? $this.data('space') : 30;    
-           
-                $(this).owlCarousel({
-                    loop: $loop,
-                    items: $items,
-                    responsive: {
-                      0:{items: $this.data('xx-items') ? $this.data('xx-items') : 1},
-                      480:{items: $this.data('xs-items') ? $this.data('xs-items') : 1},
-                      768:{items: $this.data('sm-items') ? $this.data('sm-items') : 1},
-                      980:{items: $this.data('md-items') ? $this.data('md-items') : 1},
-                      1200:{items: $items}
-                    },
-                    dots: $navdots,
-                    autoplayTimeout:$autospeed,
-                    smartSpeed: $smartspeed,
-                    autoHeight:$autohgt,
-                    center:$CenterSlider,
-                    margin:$space,
-                    nav: $navarrow,
-                    navText:["<i class='ti-arrow-left'></i>","<i class='ti-arrow-right'></i>"],
-                    autoplay: $autoplay,
-                    autoplayHoverPause: true   
-                }); 
-           }); 
-         });
-      }
-    }
 
-	/* ---------------------------------------------- /*
-     * lightbox gallery
-    /* ---------------------------------------------- */
-    NAY.Gallery = function() {
-    	if ($(".lightbox-gallery").exists() || $(".popup-youtube, .popup-vimeo, .popup-gmaps").exists()){
-    		loadScript(plugin_track + 'magnific/jquery.magnific-popup.min.js', function() {
-    			if($(".lightbox-gallery").exists()){
-    				$('.lightbox-gallery').magnificPopup({
-				        delegate: '.gallery-link',
-				        type: 'image',
-				        tLoading: 'Loading image #%curr%...',
-				        mainClass: 'mfp-fade',
-				        fixedContentPos: true,
-				        closeBtnInside: false,
-				        gallery: {
-				            enabled: true,
-				            navigateByImgClick: true,
-				            preload: [0, 1] // Will preload 0 - before current, and 1 after NAY current image
-				        }
-				    });	
-    			}
-    			if ($(".popup-youtube, .popup-vimeo, .popup-gmaps").exists()) {
-		            $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-		                  disableOn: 700,
-		                  type: 'iframe',
-		                  mainClass: 'mfp-fade',
-		                  removalDelay: 160,
-		                  preloader: false,
-		                  fixedContentPos: false
-		            });
-		        }
-    		});
-    	}
-    }
+	
 
      /*--------------------
     * Masonry
@@ -219,34 +141,6 @@ AOS.init({
     	}
 	}
 
-	/*--------------------
-        * Progress Bar 
-    ----------------------*/
-    NAY.ProgressBar = function(){
-        $(".skill-bar .skill-bar-in").each(function () {
-          var bottom_object = $(this).offset().top + $(this).outerHeight();
-          var bottom_window = $(window).scrollTop() + $(window).height();
-          var progressWidth = $(this).attr('aria-valuenow') + '%';
-          if(bottom_window > bottom_object) {
-            $(this).css({
-              width : progressWidth
-            });
-          }
-        });
-    }
-
-    /*--------------------
-        * particles
-    ----------------------*/
-    NAY.particles = function() {
-      if ($("#particles-box").exists()){
-        loadScript(plugin_track + 'particles/particles.min.js', function() {
-        });
-        loadScript(plugin_track + 'particles/particles-app.js', function() {
-        });
-      }
-    }
-
      /*--------------------
         * Scroll
     ----------------------*/
@@ -258,37 +152,6 @@ AOS.init({
           });
         });
       }
-    }
-
-    /*--------------------
-        * Video Bg
-    ----------------------*/
-    NAY.VideoBG = function() {
-      if ($(".video-bg").exists()){
-        loadScript(plugin_track + 'ytplayer/jquery.mb.YTPlayer.min.js', function() {
-          jQuery(".video-bg").YTPlayer();
-        });
-      }
-    }
-
-    /*--------------------
-        * Type It
-    ----------------------*/
-    NAY.mTypeIt = function() {
-    	if ($("#type-it").exists()){
-            loadScript(plugin_track + 'typeit-master/typeit.min.js', function() {
-                new TypeIt('#type-it', {
-		            speed: 200,
-		            loop:true,
-		            strings: [
-		              'JS Developer',
-		              'UI/UX Designer',
-                  'Content Writter'
-		            ],
-		            breakLines: false
-		        }); 
-            });
-        }
     }
 
     NAY.one_page = function() {
@@ -339,25 +202,18 @@ AOS.init({
 	});
 	// Document on Ready
 	$(document).on("ready", function(){				
-    NAY.particles(),
     NAY.scrollBar(),
-    NAY.VideoBG(),
 		NAY.HeaderFixd(),
 		NAY.Counter(),
 		NAY.MenuClose(),
     NAY.MenuTogglerClose(),
-		NAY.Gallery(),
 		NAY.HeaderHeight(),
 		NAY.MegaMenu(),
-		NAY.ProgressBar(),
-		NAY.mTypeIt(),
-		NAY.one_page(),
-		NAY.Owl();
+		NAY.one_page();
 	});
 
 	// Document on Scrool
 	$(window).on("scroll", function(){
-		NAY.ProgressBar(),
 		NAY.HeaderFixd();
 	});
 
