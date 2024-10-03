@@ -408,7 +408,7 @@ img {max-width: 100%;}
 .review-section {position: relative;padding: 100px 0 180px 0;overflow: hidden;}
 .review-section:before{position:absolute;left:-175px;top:10%;background-image:url(http://t.commonsupport.com/adro/images/icons/ring-circle.png);background-repeat:no-repeat;background-position:center;width:701px;height:756px;content:"";-webkit-animation:25s infinite alternate fa-spin;animation:25s infinite alternate fa-spin}
 .review-section .inner-box {padding: 45px 60px;background-color: #fafafa;max-width: 1100px;border: 1px solid #f7f4f4;}
-.review-section .testimonial-block.testimonial-col-01 {position: relative;margin: 20px;}
+.review-section .testimonial-block.testimonial-col-01 {position: relative;margin:10px;}
 .review-section .thumb-layer.paroller {position: absolute;right: 0;top: 59px;}
 .review-section .thumb {border: 6px solid #e5e6fa;border-radius: 50%; overflow: hidden;display: block;width:85px;box-shadow: 0 1px 45px rgba(147, 147, 147, 0.35);height:85px;margin-right:20px;}
 .review-section .thumb img {object-fit: contain;}
