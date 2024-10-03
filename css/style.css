@@ -286,16 +286,6 @@ img {max-width: 100%;}
 .testimonial-col-01 .media .media-body i {margin-right: 0px;color: #c5c2b9;font-size: 15px;font-weight: normal;}
 .testimonial-col-01 .tc-info h6 {font-weight: 500;color: #3a3973;margin-bottom: 0px;font-size: 18px; }
 .testimonial-col-01 p {margin: 0;color:#212529;font-size:17px; }
-/*@media(max-width: 991px){contact-us:after { width: 100%;}}*/
-/* Blog ---------------------*/
-/* .blog-grid {margin-top:15px;margin-bottom:15px}
-.blog-grid .blog-img{position:relative;border-radius:5px;overflow:hidden}
-.blog-grid .blog-img .date{position:absolute;background:#3a3973;color:#fff;padding:8px 15px;left:0;top:10px;font-size:14px}
-.blog-grid .blog-info{box-shadow:0 0 30px rgb(31 45 61 / .125);border-radius:5px;background:#fff;padding:20px;
-.blog-grid .blog-info h5{font-size: 22px;font-weight: 500;margin: 0 0 10px; }
-.blog-grid .blog-info h5 a {color: #3a3973; }
-.blog-grid .blog-info p {margin: 0; }
-.blog-grid .blog-info .btn-bar {margin-top: 20px; } */
 /* Contact Us---------------------*/
 .contact-info {background: #ffffff;box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);padding: 30px; }
 .contact-name {margin-bottom: 30px; }
