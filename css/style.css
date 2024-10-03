@@ -407,7 +407,7 @@ img {max-width: 100%;}
 .cursor-dot-outline {width: 40px;height: 40px;background-color: rgba(125, 186, 200, 0.5);z-index:99;}
 .review-section {position: relative;padding: 100px 0 180px 0;overflow: hidden;}
 .review-section:before{position:absolute;left:-175px;top:10%;background-image:url(http://t.commonsupport.com/adro/images/icons/ring-circle.png);background-repeat:no-repeat;background-position:center;width:701px;height:756px;content:"";-webkit-animation:25s infinite alternate fa-spin;animation:25s infinite alternate fa-spin}
-.review-section .inner-box {padding: 80px 105px;background-color: #ffffff;box-shadow: 0 0 50px rgba(226, 222, 232, 0.75);max-width:1100px;}
+.review-section .inner-box {padding: 45px 60px;background-color: #fafafa;max-width: 1100px;border: 1px solid #f7f4f4;}
 .review-section .testimonial-block.testimonial-col-01 {position: relative;margin: 20px;}
 .review-section .thumb-layer.paroller {position: absolute;right: 0;top: 59px;}
 .review-section .thumb {border: 6px solid #e5e6fa;border-radius: 50%; overflow: hidden;display: block;width:85px;box-shadow: 0 1px 45px rgba(147, 147, 147, 0.35);height:85px;margin-right:20px;}
@@ -471,7 +471,7 @@ img {max-width: 100%;}
 .contact-us .element-2{position: absolute;content: "";left: -15px;bottom: -89px;}
 .contact-us .element-3{position: absolute;content: "";right: -145px;top: -9px;}
 .contact-us .element-6{position: absolute;content: "";right:0;bottom:0;}
-.review-section .inner-box:after{position: absolute;content: "\f10d";height: 30px;width: 30px;font-size: 80px;font-family: 'FontAwesome';color: #0000000d;top: 7px;left: 27px;}
+.review-section .inner-box:after{position: absolute;content: "\f10d";height: 30px;width: 30px;font-size: 50px;font-family: 'FontAwesome';color: #0000000d;top: 7px;left: 27px;}
 .review-section .info-box .name{margin-bottom:0;font-size:22px;}
 /************************************************************************************/
 @keyframes ani-panel {
