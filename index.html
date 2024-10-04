@@ -1349,7 +1349,10 @@
     $(window).resize(function(){
         equalheight('.testimonial-col-01 .inner-box .text');
     });
-    
+
+    $('.navbar-toggler').click(function(){
+      $('.navbar-collapse').toggleClass('active');
+    });
 </script>
 <script type="text/javascript">
          $("img.lazy").lazyload({
