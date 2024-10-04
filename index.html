@@ -21,7 +21,8 @@
 <link href="css/scroll-jquery.mCustomScrollbar.min.css" rel="stylesheet">
 <!-- theme css -->
 <link href="css/style.css" rel="stylesheet">
-
+<style>
+</style>
 </head>
 <!-- Body Start -->
 <body>
@@ -33,17 +34,17 @@
     <nav class="navbar header-nav header-white header-transparent navbar-expand-lg">
         <div class="container">
             <!-- Brand -->
-            <a class="navbar-brand" href="/">Hllaomaj<span></span></a>
+            <a class="navbar-brand" href="index.html">Hllaomaj<span></span></a>
             <!-- Mobile Toggle -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-toggle" aria-controls="navbar-collapse-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" >
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <!-- Top Menu -->
-            <div class="collapse navbar-collapse justify-content-end one-page-nav" id="navbar-collapse-toggle">
+            <div class="navbar-collapse justify-content-end">
                 <ul class="navbar-nav">
-                    <li><a class="nav-link" data-scroll-nav="0" href="/">Home</a></li>
+                    <li><a class="nav-link" data-scroll-nav="0" href="index.html">Home</a></li>
                     <li><a class="nav-link" data-scroll-nav="1" href="#about">About Us</a></li>
                     <li><a class="nav-link" data-scroll-nav="2" href="#services">Services</a></li>
                     <li><a class="nav-link" data-scroll-nav="3" href="#resume">Resume</a></li>
@@ -256,7 +257,7 @@
                 </div>
                 <div class="col-12 col-md-6  col-lg-3" data-aos="fade-down" data-aos-duration="1000">
                     <div class="count-data text-center">
-                        <i class="icon-camera"></i>
+
                         <h6 class="count h2" data-to="50" data-speed="50">50</h6>
                         <p class="m-0px font-w-600">Photo Capture</p>
                     </div>
@@ -307,7 +308,7 @@
                 </div>
                 <!-- / -->
                 <!-- feaure box -->
-                <div class="col-sm-6 col-lg-4" data-aos="fade-down" data-aos-duration="700"  data-aos-delay="150">
+                <div class="col-sm-12 col-lg-4" data-aos="fade-down" data-aos-duration="700"  data-aos-delay="150">
                     <div class="feature-box-1">
                         <div class="icon">
                             <i class="icon-chat"></i>
@@ -485,7 +486,7 @@
                     <div class="portfolio-w owl-carousel owl-theme">
                         <div class="item">
                             <div class="portfolio-img">
-                                <img class="w-100 lazy" src="images/constucor-email.png" title="constucor-email" alt="constucor-email">
+                                <img class="w-100 lazy" data-original="images/constucor-email.png" src="images/constucor-email.png" title="constucor-email" alt="constucor-email">
                                 <div class="portfolio-icon">
                                     <div>
                                         <h6>Email template</h6>
@@ -496,7 +497,7 @@
                         </div>
                         <div class="item">
                             <div class="portfolio-img">
-                                <img class="w-100 lazy" src="images/bussiness.png" title="Bussiness" alt="Bussiness email template">
+                                <img class="w-100 lazy" data-original="images/bussiness.png" src="images/bussiness.png" title="Bussiness" alt="Bussiness email template">
                                 <div class="portfolio-icon">
                                     <div>
                                         <h6>Sift Email template</h6>
@@ -507,7 +508,7 @@
                         </div>
                         <div class="item">
                             <div class="portfolio-img">
-                                <img class="w-100 lazy" src="images/sift-email.png" title="Sift Email" alt="sift email template">
+                                <img class="w-100 lazy" data-original="images/sift-email.png"  src="images/sift-email.png" title="Sift Email" alt="sift email template">
                                 <div class="portfolio-icon">
                                     <div>
                                         <h6>Sift Email template</h6>
@@ -518,7 +519,7 @@
                         </div>
                         <div class="item">
                             <div class="portfolio-img">
-                                <img class="w-100 lazy" src="images/airfield-mail.png" title="Airfield Email" alt="Airfield email template">
+                                <img class="w-100 lazy" data-original="images/airfield-mail.png" src="images/airfield-mail.png" title="Airfield Email" alt="Airfield email template">
                                 <div class="portfolio-icon">
                                     <div>
                                         <h6>Airfield Email Template</h6>
@@ -529,7 +530,7 @@
                         </div>
                         <div class="item">
                             <div class="portfolio-img">
-                                <img class="w-100 lazy" src="images/mercedes.png" title="Mercedes" alt="Mercedes">
+                                <img class="w-100 lazy" data-original="images/mercedes.png" src="images/mercedes.png" title="Mercedes" alt="Mercedes">
                                 <div class="portfolio-icon">
                                     <div>
                                         <h6>Mercedes Email Template</h6>
@@ -897,7 +898,7 @@
                 </div>
             </div>
             <div class="thumb-layer paroller">
-				        <figure class="image"><img class="lazy" src="images/user-thumbs.png" alt="user"></figure>
+			    <figure class="image"><img class="lazy" src="images/user-thumbs.png" alt="user"></figure>
             </div>
         </div>
      </section> 
@@ -931,10 +932,8 @@
 <!-- custom js -->
 <script src="js/js-custom.js"></script>
 <!-- end -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script> -->
+<link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
         // auto type generate year js
